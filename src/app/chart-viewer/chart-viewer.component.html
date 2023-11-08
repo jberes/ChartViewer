@@ -1,0 +1,110 @@
+<div class="column-layout chart-viewer">
+  <div class="row-layout frame-34">
+    <div class="column-layout frame-47">
+      <div class="column-layout frame-22">
+        <div class="row-layout frame-22">
+          <p class="ig-typography__overline content">
+            {{ selected_stock!?.stock_symbol }}
+          </p>
+          <p class="ig-typography__overline text">
+            ∙
+          </p>
+          <p class="ig-typography__overline content">
+            {{ selected_stock!?.stock_market }}
+          </p>
+        </div>
+        <h5 class="content">
+          {{ selected_stock!?.stock_name }}
+        </h5>
+      </div>
+      <div class="row-layout frame-32">
+        <h3 class="content">
+          {{ selected_stock!?.previous_close }}
+        </h3>
+      </div>
+      <div class="column-layout frame-22">
+        <div class="row-layout frame-31">
+          <p class="ig-typography__body-2 content">
+            {{ selected_stock!?.stock_industry }}
+          </p>
+        </div>
+        <div class="row-layout frame-33">
+          <p class="ig-typography__caption content">
+            {{ selected_stock!?.stock_sector }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row-layout frame-46">
+      <div class="column-layout frame-40">
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            PREVIOUS CLOSE
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.previous_close }}
+          </p>
+        </div>
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            DAY RANGE
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.day_range }}
+          </p>
+        </div>
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            YEAR RANGE
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.year_range }}
+          </p>
+        </div>
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            MARKET CAP
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.stock_market_cap }}
+          </p>
+        </div>
+      </div>
+      <div class="column-layout frame-40">
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            AVG VOLUME
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.avg_volume }}
+          </p>
+        </div>
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            P/E RATIO
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.pe_ratio }}
+          </p>
+        </div>
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            DIVIDEND YIELD
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.dividend_yield }}
+          </p>
+        </div>
+        <div class="row-layout frame-38">
+          <p class="ig-typography__caption subtitle-2">
+            PRIMARY EXCHANGE
+          </p>
+          <p class="ig-typography__caption subtitle-3">
+            {{ selected_stock!?.stock_market }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <igx-category-chart [dataSource]="stocksStockData" includedProperties="date,open,low" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+</div>

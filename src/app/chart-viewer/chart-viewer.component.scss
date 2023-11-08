@@ -1,0 +1,126 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.chart-viewer {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 40px;
+  position: relative;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  min-width: min-content;
+}
+.row-layout {
+  display: flex;
+}
+.frame-34 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.frame-47 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+.frame-22 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+}
+.frame-32 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 10px;
+  position: relative;
+}
+.frame-31 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.frame-33 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 4px;
+  position: relative;
+}
+.frame-46 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 40px;
+  position: relative;
+  width: 440px;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.frame-40 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+.frame-38 {
+  border-color: hsla(var(--ig-gray-100));
+  border-width: 1px;
+  border-style: solid;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 10px 16px;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+.content {
+  color: hsla(var(--ig-gray-900));
+  position: relative;
+}
+.text {
+  color: hsla(var(--ig-gray-600));
+  position: relative;
+}
+.subtitle-2 {
+  color: hsla(var(--ig-gray-400));
+  position: relative;
+}
+.subtitle-3 {
+  text-align: center;
+  color: hsla(var(--ig-gray-900));
+  position: relative;
+}
+.category-chart {
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
