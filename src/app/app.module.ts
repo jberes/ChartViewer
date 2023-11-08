@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChartViewerComponent } from './chart-viewer/chart-viewer.component';
-import { IgxCategoryChartModule } from 'igniteui-angular-charts';
+import { IgxCategoryChartModule, IgxFinancialChartModule } from 'igniteui-angular-charts';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     IgxCategoryChartModule,
+    IgxFinancialChartModule,
     FormsModule,
     HttpClientModule
   ],

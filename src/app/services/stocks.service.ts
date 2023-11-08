@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Stock } from '../models/stocks/stock';
 import { StockData } from '../models/stocks/stock-data';
 
@@ -20,5 +20,16 @@ export class StocksService {
 
   public getStockDataList(): Observable<StockData[]> {
     return this.http.get<StockData[]>(`${API_ENDPOINT}/stockpricestemp`);
+  }
+
+  public getPriceHistory(price: number, volume: number): Observable<StockData[]> {
+    return this.http.get<StockData[]>(`${API_ENDPOINT}/stockprices/${price}/${volume}`).pipe(
+      map((data: StockData[]) =>
+        data.map(stockData => ({
+          ...stockData,
+          date: new Date(stockData.date)
+        }))
+      )
+    );
   }
 }
