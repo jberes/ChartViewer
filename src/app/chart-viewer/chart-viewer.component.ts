@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { Stock } from '../models/stocks/stock';
 import { StockData } from '../models/stocks/stock-data';
+import { Stock } from '../models/stocks/stock';
 import { StocksService } from '../services/stocks.service';
 
 @Component({
